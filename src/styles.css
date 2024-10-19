@@ -1,0 +1,206 @@
+/* Estilos personalizados para profundidade e layout */
+
+/* Ajustes para o cabeçalho */
+header {
+    background-image: url('https://source.unsplash.com/1600x900/?technology,dark') !important;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    padding: 100px 0;
+    text-align: center; /* Centralização do conteúdo */
+}
+
+/* Cores escuras e misteriosas */
+body {
+    background-color: #121212 !important;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+}
+
+/* Navbar com sombra e estilo Bootstrap */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    background-color: #1c1c1c !important; /* Cor mais escura */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff9800 !important; /* Efeito hover */
+}
+
+/* Serviços */
+#services .bi {
+    font-size: 3rem;
+    color: #ff9800 !important;
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+#services .bi:hover {
+    transform: scale(1.1) !important; /* Efeito de zoom nos ícones */
+}
+
+#services .col-md-4 {
+    padding: 20px;
+    background-color: #1f1f1f; /* Fundo escuro nas caixas de serviço */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavização */
+}
+
+#services .col-md-4:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Sombra maior */
+}
+
+/* Botões com profundidade */
+button {
+    background: linear-gradient(135deg, #ff9800, #ff6d00); /* Gradiente para profundidade */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ffb74d, #ff9800); /* Efeito hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Zoom no hover */
+}
+
+/* Estilos do formulário */
+form {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-5px);
+}
+
+/* Campos de input e textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+    outline: none;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    background: linear-gradient(135deg, #ff9800, #ff6d00);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #ffb74d, #ff9800);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* Labels */
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    #services .col-md-4 {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        padding: 12px;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+    }
+}
